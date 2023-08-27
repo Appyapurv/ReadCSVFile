@@ -21,6 +21,16 @@
             "name": ".NET Core Attach",
             "type": "coreclr",
             "request": "attach"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Debug TypeScript",
+            "program": "${workspaceFolder}/dist/app.js",
+            "sourceMaps": true,
+            "outFiles": [
+                "${workspaceFolder}/dist/**/*.js"
+            ]
         }
     ]
 }
